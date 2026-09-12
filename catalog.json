@@ -27,6 +27,8 @@
     "license": "Apache-2.0; verificar licenças das vozes",
     "sourceUrl": "https://huggingface.co/hexgrad/Kokoro-82M",
     "packageFormat": "tar.bz2",
+    "runtime": "SHERPA_KOKORO",
+    "requiredFiles": ["model.int8.onnx", "voices.bin", "tokens.txt", "espeak-ng-data/"],
     "capabilities": ["offline", "audiobook", "streaming"],
     "premium": true
   }
