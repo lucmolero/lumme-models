@@ -5,7 +5,7 @@ consome `catalog.json` por HTTPS e valida SHA-256 antes de ativar qualquer
 modelo. Os pesos permanecem fora do APK e cada fornecedor mantém a licença.
 
 Repositório público: https://github.com/lucmolero/lumme-models
-Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.4/catalog.json
+Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.5/catalog.json
 
 ## Publicação
 
@@ -17,7 +17,7 @@ Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-model
 4. Só adicione pesos cuja licença permita redistribuição; pesos sem licença
    clara ficam como referência, nunca como download automático.
 
-O catálogo `v1.0.4` já está publicado. O app mantém os plugins embutidos e a
+O catálogo `v1.0.5` já está publicado. O app mantém os plugins embutidos e a
 voz nativa mesmo quando a rede está indisponível.
 
 ## Vozes brasileiras encontradas
