@@ -26,5 +26,57 @@
     "source": "https://www.gutenberg.org/ebooks/84",
     "license": "Public domain in the USA, per Project Gutenberg page",
     "distribution": "link-only"
+  },
+  {
+    "id": "dom-casmurro-1899-pdf",
+    "title": "Dom Casmurro — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 413,
+    "source": "https://commons.wikimedia.org/wiki/File:Dom_Casmurro-1899.pdf",
+    "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dom%20Casmurro-1899.pdf?download=1",
+    "sizeBytes": 31346440,
+    "sha256": "34ee7339f5a3fdc2c43728e6974fecfdd59b22be1aa067da9f5b3b1f87488a52",
+    "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
+    "distribution": "direct-pdf"
+  },
+  {
+    "id": "papeis-avulsos-1920-pdf",
+    "title": "Papéis Avulsos — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 275,
+    "source": "https://commons.wikimedia.org/wiki/File:Papeis_avulsos_1920.pdf",
+    "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Papeis%20avulsos%201920.pdf?download=1",
+    "sizeBytes": 6674954,
+    "sha256": "aa189bde2c3609c5eb1e25d5ac2bffec3e6254492d5a63306f732fd6f34d86e7",
+    "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
+    "distribution": "direct-pdf"
+  },
+  {
+    "id": "quincas-borba-pdf",
+    "title": "Quincas Borba — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 445,
+    "source": "https://commons.wikimedia.org/wiki/File:Quincas_Borba.pdf",
+    "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Quincas%20Borba.pdf?download=1",
+    "sizeBytes": 11686700,
+    "sha256": "8324c36cab39dda221df86fd1715588a0243eaba039799f82dbc406d939998ca",
+    "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
+    "distribution": "direct-pdf"
+  },
+  {
+    "id": "memorias-posthumas-pdf",
+    "title": "Memórias Póstumas de Brás Cubas — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 404,
+    "source": "https://commons.wikimedia.org/wiki/File:Memorias_Posthumas_de_Braz_Cubas.pdf",
+    "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorias%20Posthumas%20de%20Braz%20Cubas.pdf?download=1",
+    "sizeBytes": 7618708,
+    "sha256": "ea82a65868e4c52ad0c8a61aed92dd18c22f7ec4483528926e325812c40be391",
+    "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
+    "distribution": "direct-pdf"
   }
 ]
