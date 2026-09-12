@@ -1,44 +1,16 @@
 [
   {
-    "id": "gutenberg-public-domain",
-    "title": "Project Gutenberg — catálogo público",
-    "source": "https://www.gutenberg.org/",
-    "license": "Public domain where indicated by Project Gutenberg",
-    "distribution": "link-only"
-  },
-  {
-    "id": "wikisource-free-library",
-    "title": "Wikisource — biblioteca livre",
-    "source": "https://wikisource.org/",
-    "license": "Verificar a licença de cada obra",
-    "distribution": "link-only"
-  },
-  {
-    "id": "gutenberg-1342-pride-and-prejudice",
-    "title": "Pride and Prejudice — Jane Austen",
-    "source": "https://www.gutenberg.org/ebooks/1342",
-    "license": "Public domain in the USA, per Project Gutenberg page",
-    "distribution": "link-only"
-  },
-  {
-    "id": "gutenberg-84-frankenstein",
-    "title": "Frankenstein — Mary Shelley",
-    "source": "https://www.gutenberg.org/ebooks/84",
-    "license": "Public domain in the USA, per Project Gutenberg page",
-    "distribution": "link-only"
-  },
-  {
     "id": "dom-casmurro-1899-pdf",
     "title": "Dom Casmurro — Machado de Assis",
     "author": "Machado de Assis",
     "language": "pt-BR",
     "pages": 413,
     "source": "https://commons.wikimedia.org/wiki/File:Dom_Casmurro-1899.pdf",
-    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Dom_Casmurro-1899.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/dom-casmurro-1899-pdf.pdf",
     "sizeBytes": 31346440,
     "sha256": "34ee7339f5a3fdc2c43728e6974fecfdd59b22be1aa067da9f5b3b1f87488a52",
     "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
-    "distribution": "direct-pdf"
+    "distribution": "direct-pdf-repo"
   },
   {
     "id": "papeis-avulsos-1920-pdf",
@@ -47,11 +19,11 @@
     "language": "pt-BR",
     "pages": 275,
     "source": "https://commons.wikimedia.org/wiki/File:Papeis_avulsos_1920.pdf",
-    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Papeis_avulsos_1920.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/papeis-avulsos-1920-pdf.pdf",
     "sizeBytes": 6674954,
     "sha256": "aa189bde2c3609c5eb1e25d5ac2bffec3e6254492d5a63306f732fd6f34d86e7",
     "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
-    "distribution": "direct-pdf"
+    "distribution": "direct-pdf-repo"
   },
   {
     "id": "quincas-borba-pdf",
@@ -60,11 +32,11 @@
     "language": "pt-BR",
     "pages": 445,
     "source": "https://commons.wikimedia.org/wiki/File:Quincas_Borba.pdf",
-    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Quincas_Borba.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/quincas-borba-pdf.pdf",
     "sizeBytes": 11686700,
     "sha256": "8324c36cab39dda221df86fd1715588a0243eaba039799f82dbc406d939998ca",
     "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
-    "distribution": "direct-pdf"
+    "distribution": "direct-pdf-repo"
   },
   {
     "id": "memorias-posthumas-pdf",
@@ -73,10 +45,75 @@
     "language": "pt-BR",
     "pages": 404,
     "source": "https://commons.wikimedia.org/wiki/File:Memorias_Posthumas_de_Braz_Cubas.pdf",
-    "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Memorias_Posthumas_de_Braz_Cubas.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/memorias-posthumas-pdf.pdf",
     "sizeBytes": 7618708,
     "sha256": "ea82a65868e4c52ad0c8a61aed92dd18c22f7ec4483528926e325812c40be391",
     "license": "Domínio público; digitalização histórica hospedada no Wikimedia Commons",
-    "distribution": "direct-pdf"
+    "distribution": "direct-pdf-repo"
+  },
+  {
+    "id": "dom-casmurro-bn-pdf",
+    "title": "Dom Casmurro — edição Biblioteca Nacional",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 148,
+    "source": "https://objdigital.bn.br/objdigital2/Acervo_Digital/Livros_eletronicos/fbn_dom_casmurro.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/dom-casmurro-bn.pdf",
+    "sizeBytes": 363539,
+    "sha256": "a6114898561523e841198834317c9c8c8674a7299fdd117ec383ab785ad739b0",
+    "license": "Domínio público; edição digital da Fundação Biblioteca Nacional",
+    "distribution": "direct-pdf-repo"
+  },
+  {
+    "id": "helena-bn-pdf",
+    "title": "Helena — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 156,
+    "source": "https://objdigital.bn.br/objdigital2/Acervo_Digital/livros_eletronicos/bndigital0056/bndigital0056.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/helena-bn.pdf",
+    "sizeBytes": 320069,
+    "sha256": "b19e2fbb80652ebfaaef33421aaf21e36f25f569c360921361ef631f681e9d00",
+    "license": "Domínio público; edição digital da Fundação Biblioteca Nacional",
+    "distribution": "direct-pdf-repo"
+  },
+  {
+    "id": "a-mao-e-a-luva-bn-pdf",
+    "title": "A Mão e a Luva — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 107,
+    "source": "https://objdigital.bn.br/objdigital2/Acervo_Digital/livros_eletronicos/bndigital0015/bndigital0015.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/a-mao-e-a-luva-bn.pdf",
+    "sizeBytes": 182873,
+    "sha256": "c0820f4dd3cc78c4e9eef539f10710aba8d171480989a4031e88069d2edd165c",
+    "license": "Domínio público; edição digital da Fundação Biblioteca Nacional",
+    "distribution": "direct-pdf-repo"
+  },
+  {
+    "id": "memorial-de-aires-bn-pdf",
+    "title": "Memorial de Aires — Machado de Assis",
+    "author": "Machado de Assis",
+    "language": "pt-BR",
+    "pages": 212,
+    "source": "https://objdigital.bn.br/objdigital2/Acervo_Digital/livros_eletronicos/bndigital0069/bndigital0069.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/memorial-de-aires-bn.pdf",
+    "sizeBytes": 278462,
+    "sha256": "935320e61b2b914bf42ff79c1b20e30ea44a4ee11522831d2185cf2303dc5c33",
+    "license": "Domínio público; edição digital da Fundação Biblioteca Nacional",
+    "distribution": "direct-pdf-repo"
+  },
+  {
+    "id": "iracema-bn-pdf",
+    "title": "Iracema — José de Alencar",
+    "author": "José de Alencar",
+    "language": "pt-BR",
+    "pages": 120,
+    "source": "https://objdigital.bn.br/objdigital2/Acervo_Digital/livros_eletronicos/bndigital0062/bndigital0062.pdf",
+    "downloadUrl": "https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.13/books/iracema-bn.pdf",
+    "sizeBytes": 193185,
+    "sha256": "8b80364ba9d3e8f54ba59d0d75a8d930810ab629e385666034cabec3f4ac51a3",
+    "license": "Domínio público; edição digital da Fundação Biblioteca Nacional",
+    "distribution": "direct-pdf-repo"
   }
 ]
