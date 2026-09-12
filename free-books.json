@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gutenberg-public-domain",
+    "title": "Project Gutenberg — catálogo público",
+    "source": "https://www.gutenberg.org/",
+    "license": "Public domain where indicated by Project Gutenberg",
+    "distribution": "link-only"
+  },
+  {
+    "id": "wikisource-free-library",
+    "title": "Wikisource — biblioteca livre",
+    "source": "https://wikisource.org/",
+    "license": "Verificar a licença de cada obra",
+    "distribution": "link-only"
+  }
+]

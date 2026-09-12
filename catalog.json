@@ -1,0 +1,19 @@
+[
+  {
+    "id": "kokoro-int8-multi-lang-v1_1",
+    "version": "1.1",
+    "name": "Lumme Natural · Kokoro",
+    "provider": "Kokoro / sherpa-onnx",
+    "languages": ["pt-BR", "en-US", "es"],
+    "quality": "NATURAL",
+    "latency": "FAST",
+    "sizeBytes": 147031220,
+    "downloadUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-multi-lang-v1_1.tar.bz2",
+    "sha256": "a1e94694776049035c4f2c6529f003aaece993c76aae9a78995831c3c4dcafc6",
+    "license": "Apache-2.0; verificar licenças das vozes",
+    "sourceUrl": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "packageFormat": "tar.bz2",
+    "capabilities": ["offline", "audiobook", "streaming"],
+    "premium": true
+  }
+]
