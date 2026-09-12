@@ -1,36 +1,25 @@
 # Lumme model repository
 
-Catálogo versionado de plugins de voz e conteúdo livre para o Lumme. O app
-consome `catalog.json` por HTTPS e valida SHA-256 antes de ativar qualquer
-modelo. Os pesos permanecem fora do APK e cada fornecedor mantém a licença.
+Catálogo versionado de plugins de voz e livros públicos para o Lumme. O app
+consome os manifestos por HTTPS, valida SHA-256 e mantém pesos/PDFs fora do APK.
 
-Repositório público: https://github.com/lucmolero/lumme-models
-Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.8/catalog.json
+Repositório: https://github.com/lucmolero/lumme-models
+Catálogo de vozes: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.11/catalog.json
+Catálogo de livros: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.11/free-books.json
 
 ## Publicação
 
-1. Publique alterações neste repositório público em uma branch protegida.
-2. Gere `catalog.json` com URLs HTTPS imutáveis (release/tag, nunca `main`) e
-   SHA-256 calculado localmente.
-3. Configure no app a URL raw do catálogo por build flavor. Sem rede, o
-   catálogo embutido e a voz nativa do Android continuam funcionando.
-4. Só adicione pesos cuja licença permita redistribuição; pesos sem licença
-   clara ficam como referência, nunca como download automático.
+Use releases/tags imutáveis, URLs HTTPS e hashes calculados localmente. O app
+funciona sem rede com o catálogo embutido e a voz nativa Android. Livros são
+somente descoberta até o usuário tocar em **Baixar e importar**.
 
-O catálogo `v1.0.8` já está publicado. O app mantém os plugins embutidos e a
-voz nativa mesmo quando a rede está indisponível.
+## Vozes
 
-## Vozes brasileiras encontradas
+O catálogo de produção contém Kokoro fp32 (studio, três perfis PT-BR) e
+Supertonic 3 int8 (natural, dez estilos M1-M5/F1-F5). Piper foi excluído.
 
-As referências principais são [RHVoice](https://github.com/RHVoice/RHVoice),
-que tem runtime Android e português brasileiro, e
-[Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), que alimenta o plugin
-premium sherpa-onnx. O catálogo não copia pesos de terceiros; cada pacote é
-baixado por release imutável e validado antes da ativação. Piper foi excluído da
-estratégia do produto.
+## Livros públicos
 
-## Conteúdo livre
-
-`free-books.json` contém apenas metadados e links de fontes públicas; o usuário
-sempre escolhe o download e deve verificar a licença territorial da obra.
-Catálogo ativo: `v1.0.10` (Kokoro fp32 + Supertonic 3).
+`free-books.json` inclui obras em domínio público com páginas PDF verificadas,
+licença, fonte, tamanho e SHA-256. A Biblioteca mostra a origem e permite abrir
+a fonte ou baixar/importar explicitamente.
