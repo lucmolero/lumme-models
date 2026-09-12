@@ -12,5 +12,19 @@
     "source": "https://wikisource.org/",
     "license": "Verificar a licença de cada obra",
     "distribution": "link-only"
+  },
+  {
+    "id": "gutenberg-1342-pride-and-prejudice",
+    "title": "Pride and Prejudice — Jane Austen",
+    "source": "https://www.gutenberg.org/ebooks/1342",
+    "license": "Public domain in the USA, per Project Gutenberg page",
+    "distribution": "link-only"
+  },
+  {
+    "id": "gutenberg-84-frankenstein",
+    "title": "Frankenstein — Mary Shelley",
+    "source": "https://www.gutenberg.org/ebooks/84",
+    "license": "Public domain in the USA, per Project Gutenberg page",
+    "distribution": "link-only"
   }
 ]
