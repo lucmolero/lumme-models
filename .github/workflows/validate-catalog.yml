@@ -29,5 +29,16 @@ jobs:
                   assert item['downloadUrl'].startswith('https://')
                   assert re.fullmatch(r'[a-fA-F0-9]{64}', item['sha256'])
                   assert item['sizeBytes'] > 0
-          json.loads(Path('free-books.json').read_text())
+          books = json.loads(Path('free-books.json').read_text())
+          assert isinstance(books, list) and books
+          book_ids = set()
+          for book in books:
+              assert re.fullmatch(r'[a-z0-9][a-z0-9._-]{1,63}', book['id'])
+              assert book['id'] not in book_ids
+              book_ids.add(book['id'])
+              assert book['source'].startswith('https://') and book['license']
+              if book.get('downloadUrl'):
+                  assert book['downloadUrl'].startswith('https://')
+                  assert 0 < book['sizeBytes'] <= 200 * 1024 * 1024
+                  assert re.fullmatch(r'[a-fA-F0-9]{64}', book['sha256'])
           PY
