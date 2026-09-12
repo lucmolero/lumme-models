@@ -33,3 +33,4 @@ estratégia do produto.
 
 `free-books.json` contém apenas metadados e links de fontes públicas; o usuário
 sempre escolhe o download e deve verificar a licença territorial da obra.
+Catálogo ativo: `v1.0.10` (Kokoro fp32 + Supertonic 3).
