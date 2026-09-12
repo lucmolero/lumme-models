@@ -1,0 +1,30 @@
+name: validate-catalog
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate JSON and immutable download metadata
+        run: |
+          python - <<'PY'
+          import json, re, urllib.parse
+          from pathlib import Path
+          data = json.loads(Path('catalog.json').read_text())
+          assert isinstance(data, list) and data
+          ids = set()
+          for item in data:
+              assert re.fullmatch(r'[a-z0-9][a-z0-9._-]{1,63}', item['id'])
+              assert item['id'] not in ids
+              ids.add(item['id'])
+              assert item['sourceUrl'].startswith('https://')
+              if 'downloadUrl' in item:
+                  assert item['downloadUrl'].startswith('https://')
+                  assert re.fullmatch(r'[a-fA-F0-9]{64}', item['sha256'])
+                  assert item['sizeBytes'] > 0
+          json.loads(Path('free-books.json').read_text())
+          PY
