@@ -1,5 +1,19 @@
 [
   {
+    "id": "tll",
+    "version": "reference-1",
+    "name": "TLL · voz comunitária",
+    "provider": "sherpa-onnx community registry",
+    "languages": ["tll"],
+    "quality": "STUDIO",
+    "latency": "BATCH",
+    "license": "Pendente de auditoria do pacote e dos pesos",
+    "sourceUrl": "https://k2-fsa.github.io/sherpa/onnx/tts/all/",
+    "runtime": "SHERPA_ONNX",
+    "capabilities": ["reference", "batch"],
+    "premium": true
+  },
+  {
     "id": "kokoro-int8-multi-lang-v1_1",
     "version": "1.1",
     "name": "Lumme Natural · Kokoro",
