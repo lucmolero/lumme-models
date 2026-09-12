@@ -4,8 +4,8 @@ Catálogo versionado de plugins de voz e livros públicos para o Lumme. O app
 consome os manifestos por HTTPS, valida SHA-256 e mantém pesos/PDFs fora do APK.
 
 Repositório: https://github.com/lucmolero/lumme-models
-Catálogo de vozes: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.14/catalog.json
-Catálogo de livros: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.14/free-books.json
+Catálogo de vozes: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.16/catalog.json
+Catálogo de livros: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.16/free-books.json
 
 ## Publicação
 
