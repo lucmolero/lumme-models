@@ -22,7 +22,7 @@ jobs:
               assert item['id'] not in ids
               ids.add(item['id'])
               assert item['sourceUrl'].startswith('https://')
-              assert item.get('runtime', 'SHERPA_ONNX') in {'ANDROID_TTS', 'SHERPA_KOKORO', 'SHERPA_ONNX'}
+              assert item.get('runtime', 'SHERPA_ONNX') in {'ANDROID_TTS', 'SHERPA_KOKORO', 'SHERPA_SUPERTONIC', 'SHERPA_ONNX'}
               for path in item.get('requiredFiles', []):
                   assert path and not path.startswith('/') and '..' not in path and '\\' not in path
               if 'downloadUrl' in item:
