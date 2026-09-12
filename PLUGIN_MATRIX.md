@@ -8,7 +8,7 @@ também precisam ser distribuíveis.
 | Projeto | GitHub | Português | Android/offline | Licença e decisão |
 | --- | --- | --- | --- | --- |
 | Kokoro 82M + sherpa-onnx | [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) / [k2-fsa/sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) | PT-BR no pacote multilíngue | ONNX, CPU, rápido | Apache-2.0; **produção agora**. |
-| Piper VITS | [OHF-Voice/piper1-gpl](https://github.com/OHF-Voice/piper1-gpl) | `cadu`, `edresson`, `faber`, `jeff` PT-BR | ONNX, CPU, muito rápido | Código GPL-3.0 e licença por voz; **plugin VITS em preparação**, após auditoria. |
+| RHVoice | [RHVoice/RHVoice](https://github.com/RHVoice/RHVoice) | Português brasileiro (`letícia-f123`) | Runtime Android nativo, footprint pequeno | GPL-2.0 no core e licenças separadas para dados/voz; **não empacotar sem auditoria jurídica completa**. |
 | OpenVoice V2 | [myshell-ai/OpenVoice](https://github.com/myshell-ai/OpenVoice) | Não há PT-BR nativo documentado | PyTorch, pesado para o APK | MIT, mas **Lab/servidor**; não é runtime Android imediato. |
 | Chatterbox Multilingual | [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | Multilíngue, validar `pt` por checkpoint | ~500M, PyTorch | MIT no código/pesos publicados; **Lab/servidor** até haver ONNX/benchmark Android. |
 | XTTS v2 | [coqui-ai/TTS](https://github.com/coqui-ai/TTS) | Português incluído | Grande, PyTorch | CPML não comercial; **não distribuir no Lumme comercial** sem licença. |
@@ -22,9 +22,10 @@ também precisam ser distribuíveis.
 
 1. Voz nativa Android é o fallback instantâneo e padrão.
 2. Kokoro é o primeiro plugin premium offline porque já possui runtime sherpa,
-   pacote int8, hash fixo e caminho de ativação atômica.
-3. Piper será o próximo plugin real: precisa de `OfflineTtsVitsModelConfig`,
-   resampling para a cadeia de áudio e seleção de voz persistida por livro.
+   pacote fp32, hash fixo e caminho de ativação atômica. O fp32 é deliberado:
+   há relatos de artefatos e menor eficiência do int8 em Android/ARM.
+3. RHVoice fica como alternativa de acessibilidade/integrador externo, não como
+   download do Lumme, até que as licenças dos dados e da voz estejam completas.
 4. Modelos de clonagem ou de servidor aparecem no Lab somente como “avançado”
    quando o uso e a licença estiverem claros; nunca como download automático.
 5. O catálogo usa apenas releases/tag imutáveis, HTTPS, SHA-256 e arquivos

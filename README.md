@@ -5,7 +5,7 @@ consome `catalog.json` por HTTPS e valida SHA-256 antes de ativar qualquer
 modelo. Os pesos permanecem fora do APK e cada fornecedor mantém a licença.
 
 Repositório público: https://github.com/lucmolero/lumme-models
-Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.6/catalog.json
+Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-models/v1.0.8/catalog.json
 
 ## Publicação
 
@@ -17,18 +17,17 @@ Catálogo de produção: https://raw.githubusercontent.com/lucmolero/lumme-model
 4. Só adicione pesos cuja licença permita redistribuição; pesos sem licença
    clara ficam como referência, nunca como download automático.
 
-O catálogo `v1.0.6` já está publicado. O app mantém os plugins embutidos e a
+O catálogo `v1.0.8` já está publicado. O app mantém os plugins embutidos e a
 voz nativa mesmo quando a rede está indisponível.
 
 ## Vozes brasileiras encontradas
 
-Projetos brasileiros como [Vozia](https://github.com/leoberbert/Vozia),
-[text-to-speech-with-piper](https://github.com/jvictorpdl/text-to-speech-with-piper)
-e [tts-acessibilidade-pt-br](https://github.com/renatoork/tts-acessibilidade-pt-br)
-foram usados como referências de integração e avaliação. Eles apontam para
-modelos Piper/Kokoro publicados nos canais oficiais; os repositórios não são
-tratados como espelhos de pesos. A lista de vozes PT-BR (cadu, edresson, faber
-e jeff) e os links versionados estão documentados em `VOICE_SOURCES.md`.
+As referências principais são [RHVoice](https://github.com/RHVoice/RHVoice),
+que tem runtime Android e português brasileiro, e
+[Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M), que alimenta o plugin
+premium sherpa-onnx. O catálogo não copia pesos de terceiros; cada pacote é
+baixado por release imutável e validado antes da ativação. Piper foi excluído da
+estratégia do produto.
 
 ## Conteúdo livre
 
