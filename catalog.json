@@ -16,6 +16,34 @@
     "runtime": "SHERPA_KOKORO",
     "requiredFiles": ["model.onnx", "voices.bin", "tokens.txt", "espeak-ng-data/"],
     "capabilities": ["offline", "audiobook", "streaming"],
-    "premium": true
+    "premium": true,
+    "voices": [
+      {"id":"pf_dora","name":"Dora","description":"feminina, clara"},
+      {"id":"pm_alex","name":"Alex","description":"masculina, natural"},
+      {"id":"pm_santa","name":"Santa","description":"masculina, grave"}
+    ]
+  },
+  {
+    "id": "supertonic-3-pt",
+    "version": "3",
+    "name": "Lumme Rápida · Supertonic",
+    "provider": "Supertone / sherpa-onnx",
+    "languages": ["pt", "en", "es"],
+    "quality": "STUDIO",
+    "latency": "FAST",
+    "sizeBytes": 128774318,
+    "downloadUrl": "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/sherpa-onnx-supertonic-3-tts-int8-2026-05-11.tar.bz2",
+    "sha256": "82fa96f91cc4f8abaae3a14a3f4153facf88bed821d1f7331cec2700f432c427",
+    "license": "MIT (código) + OpenRAIL-M (pesos)",
+    "sourceUrl": "https://github.com/supertone-oss-archive/supertonic",
+    "packageFormat": "tar.bz2",
+    "runtime": "SHERPA_SUPERTONIC",
+    "requiredFiles": ["duration_predictor.int8.onnx", "text_encoder.int8.onnx", "vector_estimator.int8.onnx", "vocoder.int8.onnx", "tts.json", "unicode_indexer.bin", "voice.bin"],
+    "capabilities": ["offline", "audiobook", "streaming", "multivoice"],
+    "premium": true,
+    "voices": [
+      {"id":"M1","name":"M1","description":"masculina"}, {"id":"M2","name":"M2","description":"masculina"}, {"id":"M3","name":"M3","description":"masculina"}, {"id":"M4","name":"M4","description":"masculina"}, {"id":"M5","name":"M5","description":"masculina"},
+      {"id":"F1","name":"F1","description":"feminina"}, {"id":"F2","name":"F2","description":"feminina"}, {"id":"F3","name":"F3","description":"feminina"}, {"id":"F4","name":"F4","description":"feminina"}, {"id":"F5","name":"F5","description":"feminina"}
+    ]
   }
 ]
